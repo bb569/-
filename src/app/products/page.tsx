@@ -14,7 +14,7 @@ interface BuildingProps {
     p2: string,
     p3: string,
     p4: string,
-    p5: string
+    p5: string,
 }
 
 function MeinMap(props: { mins: BuildingProps }) {
@@ -25,11 +25,11 @@ function MeinMap(props: { mins: BuildingProps }) {
                 <div className='relative right-0 sm:right-4 top-3 xl:top-5 md:top-0'>
                     <div className='flex justify-between w-56 relative bottom-0 sm:bottom-8 md:bottom-5 md:left-0 lg:left-5 left-5 h-0'>
                         <div className=' text-xs relative top-1'>
-                            <del>1,000,000‌تومان </del>
+                            <del>{props.mins.p1}</del>
                             <br />
-                            <p className='text-base text-green-300'>25%off</p>
+                            <p className='text-base text-green-300'>{props.mins.p3}</p>
                         </div>
-                        <p className='xl:text-xl text-sm md:text-base lg:text-lg relative right-10 lg:right-5'>750,000تومان</p>
+                        <p className='xl:text-xl text-sm md:text-base lg:text-lg relative right-10 lg:right-5'>{props.mins.p2}</p>
                     </div>
                     <div className='flex lg:w-56 w-44 justify-between text-center h-7 relative top-12 sm:top-4 md:top-8 left-5 md:left-0 lg:left-5'>
                         <Link href={`/Basket`}>
@@ -60,7 +60,6 @@ function ShoppingBasket() {
             img: "https://rukminim2.flixcart.com/image/612/612/xif0q/sofa-set/i/5/p/68-58-68-58-blue-cotton-3-2-1-177-8-28-71-12-36-21-124-46-original-imagz8ykenzwftju.jpeg?q=70",
             img2: "https://img.icons8.com/?size=100&id=tKTHzO8F7kZi&format=png&color=000000",
             text: "ست مبل چوبی 6 نفره چوبی جامد مبل کندالو ای طبیعیست مبل چوبی 6 نفره چوبی جامد مبل کندالو ای طبیعی",
-            text2: "2000.Reviews",
             li1: ". بدنه چوبی",
             li2: ". رنگ قهوه ایی",
             li3: ". قابل شست و شو",
@@ -68,8 +67,7 @@ function ShoppingBasket() {
             p1: "2,000,000.‌‌توما‌ن",
             p2: "3,300,000.تومان",
             p3: "60%off",
-            p4: "تحویل‌رایگان",
-            p5: "برای‌مقایسه‌اضافه‌کنید"
+
         }, {
             star: 4.4,
             img: "https://rukminim2.flixcart.com/image/612/612/l4pxk7k0/sofa-set/b/w/z/cream-cotton-blend-3-2-1-sf-sss-172-saamenia-furnitures-natural-original-imagfjt8cugzk5af.jpeg?q=70",
